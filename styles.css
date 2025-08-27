@@ -6,14 +6,27 @@
     --accent: #34174f;
 }
 
+body{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin: 0;
+    height: 100vh;
+}
+
 .side-bar{
     background-color: var(--primary);
+    grid-column: 1 / 1;
+    grid-row: 1 / 5;
 }
 
 .header{
     background-color: var(--secondary);
+    grid-column: 2 / 6;
 }
 
 .main-content{
     background-color: var(--accent);
+    grid-column: 2 / 6;
+    grid-row: 2 / 6;
 }
