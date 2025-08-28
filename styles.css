@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:700|Inter:400');
+
 :root{
     --text: #f3eff5;
     --background: #08050a;
@@ -6,9 +8,14 @@
     --accent: #34174f;
 }
 
+h1, h2, h3, h4, p, i{
+    font-family: 'Inter';
+    color: var(--text);
+}
+
 body{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
     margin: 0;
     height: 100vh;
@@ -16,17 +23,35 @@ body{
 
 .side-bar{
     background-color: var(--primary);
-    grid-column: 1 / 1;
     grid-row: 1 / 5;
+    padding: 10%;
+}
+
+.side-bar .nav{
+    background-color: var(--secondary);
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.side-bar .nav .button{
+    background-color: var(--accent);
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    gap: 15%;
+}
+
+i{
 }
 
 .header{
     background-color: var(--secondary);
-    grid-column: 2 / 6;
+    grid-column: 2 / 7;
 }
 
 .main-content{
     background-color: var(--accent);
-    grid-column: 2 / 6;
+    grid-column: 2 / 7;
     grid-row: 2 / 6;
 }
