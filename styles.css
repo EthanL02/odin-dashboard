@@ -56,5 +56,23 @@ body{
     background-color: var(--background-dark);
     grid-column: 2 / 7;
     box-shadow: 0px 5px 10px 5px var(--background-dark);
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-block: 1%;
+    padding-inline: 3%;
+}
+
+.search *{
+    border-radius: 1rem;
+    border-style: none;
+}
+
+.header .subsection{
+    display: flex;
+}
+
+.subsection .info{
+    display: flex;
+    align-items: center;
 }
