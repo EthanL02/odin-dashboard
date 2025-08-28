@@ -32,6 +32,7 @@ body{
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
 }
 
 .side-bar .nav .button{
@@ -42,7 +43,8 @@ body{
     gap: 15%;
 }
 
-i{
+.space-after{
+    margin-bottom: 3rem;
 }
 
 .header{
