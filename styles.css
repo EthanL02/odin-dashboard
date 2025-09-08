@@ -113,3 +113,70 @@ body{
     border-radius: 2rem;
     font-size: large;
 }
+
+.main-content{
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    padding-inline-end: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.side-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project-cards .cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.card{
+    background-color: var(--foreground);
+    display: flex;
+    flex-direction: column;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 3px 1px rgb(131, 131, 131);
+}
+
+.card.project .icons{
+    display: flex;
+    justify-content: right;
+    gap: 2rem;
+}
+
+.accouncement h3{
+    margin: 0;
+}
+
+.announcement p{
+    margin-top: 0;
+}
+
+.trending .card{
+    display: flex;
+    gap: 1rem;
+}
+
+.person{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.person .info{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: start;
+    background-color: gray;
+}
+
+.person .info *{
+    margin: 0;
+}
