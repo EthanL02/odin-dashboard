@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:700|Inter:400');
 
 :root{
-    --text: #f3eff5;
-    --background: #1a1120;
-    --background-dark: #08050a;
-    --primary: #a558df;
-    --secondary: #512970;
-    --accent: #2d1742;
+    --text: #161616;
+    --background: #b9b9b9;
+    --foreground: #ffffff;
+    --primary: #9b43df;
+    --secondary: #930aa0;
 }
 
 h1, h2, h3, h4, p, i{
@@ -23,9 +22,13 @@ body{
 }
 
 .side-bar{
-    background-color: var(--accent);
+    background-color: var(--primary);
     grid-row: 1 / 6;
     padding: 10%;
+}
+
+.side-bar *{
+    color: var(--foreground);
 }
 
 .side-bar .nav{
